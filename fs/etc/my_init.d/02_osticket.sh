@@ -17,3 +17,7 @@ else
     echo "Running in PRODUCTION mode."
     rm -rf /var/www/html/setup
 fi
+
+crontab <<EOF
+*/5 * * * * /usr/bin/php /var/www/html/api/cron.php
+EOF
