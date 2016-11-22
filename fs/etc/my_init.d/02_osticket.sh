@@ -5,17 +5,17 @@ if [ ! -r /config/ost-config.php ]; then
     exit 1
 fi
 
-ln -sf /config/ost-config.php /var/www/html/include/ost-config.php
+ln -sf /config/ost-config.php /var/www/html/dota-support/include/ost-config.php
 
 if [ "$OSTICKET_SETUP" = "yes" -o "$OSTICKET_SETUP" = "true" ]; then
     echo "Running in SETUP mode."
-    if [ ! -w /var/www/html/include/ost-config.php ]; then
+    if [ ! -w /var/www/html/dota-support/include/ost-config.php ]; then
         echo "ERROR: ost-config.php is not writable."
         exit 2
     fi
 else
     echo "Running in PRODUCTION mode."
-    rm -rf /var/www/html/setup
+    rm -rf /var/www/html/dota-support/setup
 fi
 
 crontab <<EOF
