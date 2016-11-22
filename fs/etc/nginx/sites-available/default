@@ -22,48 +22,48 @@ server {
 
     set $path_info "";
 
-    if ($request_uri ~ "^/api(/[^\?]+)") {
+    if ($request_uri ~ "^/dota-support/api(/[^\?]+)") {
         set $path_info $1;
     }
 
-    if ($request_uri ~ "^/scp/.*\.php(/[^\?]+)") {
+    if ($request_uri ~ "^/dota-support/scp/.*\.php(/[^\?]+)") {
         set $path_info $1;
     }
 
-    if ($request_uri ~ "^/kb/.*\.php(/[^\?]+)") {
+    if ($request_uri ~ "^/dota-support/kb/.*\.php(/[^\?]+)") {
         set $path_info $1;
     }
 
-    if ($request_uri ~ "^/.*\.php(/[^\?]+)") {
+    if ($request_uri ~ "^/dota-support/.*\.php(/[^\?]+)") {
         set $path_info $1;
     }
 
-    if ($request_uri ~ "^/setup/.*\.php(/[^\?]+)") {
+    if ($request_uri ~ "^/dota-support/setup/.*\.php(/[^\?]+)") {
         set $path_info $1;
     }
 
-    location / {
+    location /dota-support/ {
         try_files $uri $uri/ index.php;
     }
 
-    location ~ ^/api/(?:tickets|tasks).*$ {
+    location ~ ^/dota-support/api/(?:tickets|tasks).*$ {
         try_files $uri $uri/ /api/http.php?$query_string;
     }
 
-    location ~ ^/scp/ajax.php/.*$ {
+    location ~ ^/dota-support/scp/ajax.php/.*$ {
         try_files $uri $uri/ /scp/ajax.php?$query_string;
     }
 
-    location ~ ^/kb/faq.php/.*$ {
+    location ~ ^/dota-support/kb/faq.php/.*$ {
         try_files $uri $uri/ /kb/faq.php?$query_string;
     }
 
-    location ~ ^/ajax.php/.*$ {
+    location ~ ^/dota-support/ajax.php/.*$ {
         try_files $uri $uri/ /ajax.php?$query_string;
     }
 
-    location ~ ^/setup/ajax.php/.*$ {
-        try_files $uri $uri/ /setup/ajax.php?$query_string;
+    location ~ ^/dota-support/setup/ajax.php/.*$ {
+        try_files $uri $uri/ /dota-support/setup/ajax.php?$query_string;
     }
 
     location ~ \.php$ {
@@ -82,6 +82,6 @@ server {
     location = /favicon.ico { log_not_found off; access_log off; }
     location = /robots.txt  { access_log off; log_not_found off; }
 
-    error_page 404 /index.php;
+    error_page 404 /dota-support/index.php;
 
 }

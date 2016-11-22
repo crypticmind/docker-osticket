@@ -19,5 +19,5 @@ else
 fi
 
 crontab <<EOF
-*/5 * * * * /usr/bin/php /var/www/html/api/cron.php
+*/5 * * * * /usr/bin/php /var/www/html/dota-support/api/cron.php
 EOF
