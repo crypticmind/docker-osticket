@@ -43,7 +43,11 @@ server {
     }
 
     location /dota-support/ {
-        try_files $uri $uri/ index.php;
+        try_files $uri $uri/ /dota-support/index.php;
+    }
+
+    location /dota-support/scp/ {
+        try_files $uri $uri/ /dota-support/scp/index.php;
     }
 
     location ~ ^/dota-support/api/(?:tickets|tasks).*$ {
