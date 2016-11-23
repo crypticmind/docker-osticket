@@ -47,19 +47,19 @@ server {
     }
 
     location ~ ^/dota-support/api/(?:tickets|tasks).*$ {
-        try_files $uri $uri/ /api/http.php?$query_string;
+        try_files $uri $uri/ /dota-support/api/http.php?$query_string;
     }
 
     location ~ ^/dota-support/scp/ajax.php/.*$ {
-        try_files $uri $uri/ /scp/ajax.php?$query_string;
+        try_files $uri $uri/ /dota-support/scp/ajax.php?$query_string;
     }
 
     location ~ ^/dota-support/kb/faq.php/.*$ {
-        try_files $uri $uri/ /kb/faq.php?$query_string;
+        try_files $uri $uri/ /dota-support/kb/faq.php?$query_string;
     }
 
     location ~ ^/dota-support/ajax.php/.*$ {
-        try_files $uri $uri/ /ajax.php?$query_string;
+        try_files $uri $uri/ /dota-support/ajax.php?$query_string;
     }
 
     location ~ ^/dota-support/setup/ajax.php/.*$ {
