@@ -40,21 +40,21 @@ if(is_object($thisstaff) && $thisstaff->isStaff()) { ?>
     <div class="clear"></div>
 </div>
 
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/jquery.pjax.js?55dc25a"></script>
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>scp/js/bootstrap-typeahead.js?55dc25a"></script>
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>scp/js/scp.js?55dc25a"></script>
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/jquery-ui-1.10.3.custom.min.js?55dc25a"></script>
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/filedrop.field.js?55dc25a"></script>
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/select2.min.js?55dc25a"></script>
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>scp/js/tips.js?55dc25a"></script>
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor.min.js?55dc25a"></script>
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor-osticket.js?55dc25a"></script>
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor-plugins.js?55dc25a"></script>
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>scp/js/jquery.translatable.js?55dc25a"></script>
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>scp/js/jquery.dropdown.js?55dc25a"></script>
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>scp/js/bootstrap-tooltip.js?55dc25a"></script>
-<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/fabric.min.js?55dc25a"></script>
-<link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>scp/css/tooltip.css?55dc25a"/>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/jquery.pjax.js?c0ab967"></script>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>scp/js/bootstrap-typeahead.js?c0ab967"></script>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>scp/js/scp.js?c0ab967"></script>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/jquery-ui-1.10.3.custom.min.js?c0ab967"></script>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/filedrop.field.js?c0ab967"></script>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/select2.min.js?c0ab967"></script>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>scp/js/tips.js?c0ab967"></script>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor.min.js?c0ab967"></script>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor-osticket.js?c0ab967"></script>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor-plugins.js?c0ab967"></script>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>scp/js/jquery.translatable.js?c0ab967"></script>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>scp/js/jquery.dropdown.js?c0ab967"></script>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>scp/js/bootstrap-tooltip.js?c0ab967"></script>
+<script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/fabric.min.js?c0ab967"></script>
+<link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>scp/css/tooltip.css?c0ab967"/>
 <script type="text/javascript">
     getConfig().resolve(<?php
         include INCLUDE_DIR . 'ajax.config.php';
