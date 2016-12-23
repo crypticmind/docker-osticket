@@ -443,8 +443,8 @@ if ($thisstaff->hasPerm(TicketModel::PERM_CREATE, false)) {
 }
 
 
-$ost->addExtraHeader('<script type="text/javascript" src="js/ticket.js?55dc25a"></script>');
-$ost->addExtraHeader('<script type="text/javascript" src="js/thread.js?55dc25a"></script>');
+$ost->addExtraHeader('<script type="text/javascript" src="js/ticket.js?c0ab967"></script>');
+$ost->addExtraHeader('<script type="text/javascript" src="js/thread.js?c0ab967"></script>');
 $ost->addExtraHeader('<meta name="tip-namespace" content="tickets.queue" />',
     "$('#content').data('tipNamespace', 'tickets.queue');");
 
