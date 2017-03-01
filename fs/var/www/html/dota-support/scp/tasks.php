@@ -209,8 +209,8 @@ if ($thisstaff->hasPerm(TaskModel::PERM_CREATE, false)) {
 }
 
 
-$ost->addExtraHeader('<script type="text/javascript" src="js/ticket.js?c0ab967"></script>');
-$ost->addExtraHeader('<script type="text/javascript" src="js/thread.js?c0ab967"></script>');
+$ost->addExtraHeader('<script type="text/javascript" src="js/ticket.js?b9f0937"></script>');
+$ost->addExtraHeader('<script type="text/javascript" src="js/thread.js?b9f0937"></script>');
 $ost->addExtraHeader('<meta name="tip-namespace" content="tasks.queue" />',
     "$('#content').data('tipNamespace', 'tasks.queue');");
 
@@ -225,7 +225,8 @@ if($task) {
         // Auto add new fields to the entries
         foreach ($forms as $f) $f->addMissingFields();
     } elseif($_REQUEST['a'] == 'print' && !$task->pdfExport($_REQUEST['psize']))
-        $errors['err'] = __('Internal error: Unable to print to PDF');
+        $errors['err'] = __('Unable to print to PDF.')
+            .' '.__('Internal error occurred');
 } else {
 	$inc = 'tasks.inc.php';
     if ($_REQUEST['a']=='open' &&
@@ -236,7 +237,8 @@ if($task) {
         if (!($query=$_SESSION[':Q:tasks']))
             $errors['err'] = __('Query token not found');
         elseif (!Export::saveTasks($query, "tasks-$ts.csv", 'csv'))
-            $errors['err'] = __('Internal error: Unable to dump query results');
+            $errors['err'] = __('Unable to dump query results.')
+                .' '.__('Internal error occurred');
     }
 
     //Clear active submenu on search with no status
