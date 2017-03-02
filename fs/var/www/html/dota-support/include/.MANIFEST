@@ -402,7 +402,7 @@ c716d02113ae8e04df9e4e3342747effa322dd3b include/ajax.kbase.php
 e09368221bf951caaf1309bf4d65ff664bc70ada include/ajax.search.php
 79d889c92e6769c5ce55e419b8496e4fe55bf8fa include/ajax.sequence.php
 421ce17e4b41df0eff529e8610981a43074594a3 include/ajax.staff.php
-a5b74d689383ac9bcaaf25ad2dff2e561c4895de include/ajax.tasks.php
+fdc23c6b59a488ca68c9480a291fa8fbfb853fd7 include/ajax.tasks.php
 f897c6fa3e57300b25d916c39d73db015163e108 include/ajax.thread.php
 0abe3c4644fb3777c654bad73fb2d3c0ae47b179 include/ajax.tickets.php
 117dd71e4e3cd832cdb9d920e25a5111e13ec053 include/ajax.tips.php
